@@ -1,13 +1,22 @@
 package io.tdd.kata;
 
 public class FizzBuzz {
-    public boolean case1 (int i){
-        return true ;
-    }
-    public boolean case2 (int i){
-        return true ;
-    }
-    public boolean case3 (int i){
-        return true ;
+
+    public String calculation(int i){
+        if(i%3 == 0 && i%5 ==0){
+            return "FizzBuzz";
+        }
+
+        if(i%3 ==0){
+            return "Fizz";
+        }
+
+        if(i%5 ==0){
+            return "Buzz";
+        }
+
+        String result =  Integer.toString(i);
+//        String abc = i +"";
+        return result;
     }
 }
