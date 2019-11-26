@@ -2,6 +2,7 @@ package io.tdd.kata;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Number {
     private List<String> arr = null;
@@ -14,17 +15,17 @@ public class Number {
         }
     }
 
-    public List<String>  generateArray(){
-        for(int i = 0; i < this.length; i ++){
-            String value = this.arr.get(i);
-            if(Integer.parseInt(value) % 15 == 0){
-                this.arr.set(i, "FizzBuzz");
-            }else if(Integer.parseInt(value) % 5 == 0){
-                this.arr.set(i, "Buzz");
-            }else if(Integer.parseInt(value) % 3 == 0){
-                this.arr.set(i, "Fizz");
+    public List<String> generateArray(){
+        return this.arr.stream().map(initial -> {
+            if(Integer.parseInt(initial) % 15 == 0){
+                return "FizzBuzz";
+            }else if(Integer.parseInt(initial) % 5 == 0){
+                return "Buzz";
+            }else if(Integer.parseInt(initial) % 3 == 0){
+                return "Fizz";
+            }else{
+                return initial;
             }
-        }
-        return this.arr;
+        }).collect(Collectors.toList());
     }
 }
