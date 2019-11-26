@@ -14,7 +14,7 @@ public class Number {
         }
     }
 
-    public void generateArray(){
+    public List<String>  generateArray(){
         for(int i = 0; i < this.length; i ++){
             String value = this.arr.get(i);
             if((Integer.parseInt(value) % 3 == 0) && (Integer.parseInt(value) % 5 == 0)){
@@ -25,12 +25,6 @@ public class Number {
                 this.arr.set(i, "Fizz");
             }
         }
-        for( int j = 0; j < this.length; j ++){
-            System.out.println(this.arr.get(j));
-        }
-        
-    }
-    public List<String> getArr(){
         return this.arr;
     }
 }
