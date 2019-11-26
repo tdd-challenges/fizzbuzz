@@ -7,6 +7,6 @@ public class Main {
         for(int i = 1 ; i<=100 ; i++){
             result = result + fizzBuzz.calculation(i) + ", ";
         }
-        System.out.println(result.replace("98, Fizz, Buzz,","98, Fizz, Buzz"));
+        System.out.print(result.replace("98, Fizz, Buzz, ","98, Fizz, Buzz"));
     }
 }
