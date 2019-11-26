@@ -9,7 +9,7 @@ public class FizzBuzzArray{
     public String print(int upper){
 
         //List<String> Names = Arrays.asList(new String[]{});
-        List<String> Names = new ArrayList<String>();
+        List<String> Nums = new ArrayList<String>();
 
         int i = 0;
 
@@ -17,24 +17,24 @@ public class FizzBuzzArray{
             i++;
 
             if ( i % 3 == 0 && i % 5 == 0){
-                Names.add("FizzBuzz");
+                Nums.add("FizzBuzz");
                 continue;
             }
 
             if ( i % 3 == 0){
-                Names.add("Fizz");
+                Nums.add("Fizz");
                 continue;
             }
 
             if (i % 5 == 0){
-                Names.add("Buzz");
+                Nums.add("Buzz");
                 continue;
             }
 
-            Names.add(Integer.toString(i));
+            Nums.add(Integer.toString(i));
 
         }while( i < upper);
         
-        return (String.join(", ", Names));
+        return (String.join(", ", Nums));
     }
 }
