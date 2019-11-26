@@ -7,4 +7,7 @@ public class FizzBuzz {
     public boolean case2 (int i){
         return true ;
     }
+    public boolean case3 (int i){
+        return true ;
+    }
 }
