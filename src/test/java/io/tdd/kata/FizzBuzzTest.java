@@ -13,11 +13,11 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void to_5_print() {
-		assertEquals(FizzBuzz.printTo(5), "1, 2, Fizz, 4, Buzz");
+		assertEquals(FizzBuzz.printTo(5), "1, 2, Fizz, 4,\n Buzz");
 	}
 	
 	@Test
 	public void to_15_print() {
-		assertEquals(FizzBuzz.printTo(15), "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz");
+		assertEquals(FizzBuzz.printTo(15), "1, 2, Fizz, 4,\n Buzz, Fizz, 7\n, 8, Fizz, Buz\nz, 11, Fizz, 1\n3, 14, FizzBuz\nz");
 	}
 }

@@ -25,6 +25,19 @@ public class FizzBuzz {
 			}
 		}
 
-		return result;
+		return result = lineWrap(result);
+	}
+	
+	public static String lineWrap(String string) {
+		String result ="";
+		
+		char[] stringChars = string.toCharArray();
+        for(int i=0; i<stringChars.length; i++) {
+        	result += stringChars[i] +"";
+        	if ((i+1)%14 == 0) {
+        		result += "\n";
+        	}        	
+        }
+        return result;
 	}
 }
