@@ -21,7 +21,7 @@ public class FizzBuzz {
             if (i == 1) {
                 result = result + calculate(1);
             } else {
-                result = result + "," + calculate(i);
+                result = result + ", " + calculate(i);
             }
         }
 
