@@ -23,4 +23,9 @@ public class FizzBuzzTest {
     public void test_end_is_not_comma() {
         assertEquals("1, 2", fizzBuzz.printFizzBuzz(2));
     }
+    public void test_14char_linebreak(){
+        assertEquals("1, 2, Fizz, 4,\n" +
+                " Buzz, Fizz, 7\n" +
+                ", 8, Fizz, Buz",fizzBuzz.printFizzBuzz(10));
+    }
 }
