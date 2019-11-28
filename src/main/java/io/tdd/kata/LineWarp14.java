@@ -6,7 +6,7 @@ public class LineWarp14 {
         int length = FizzBuzz.printNum(100).length();
         double row = Math.ceil(length / 14);
         String WarpedString = "";
-        for (int i = 1; i < row; i++) {
+        for (int i = 1; i <= row; i++) {
             WarpedString = WarpedString + Line.substring((14 * (i - 1)), (14 * i));
             WarpedString = WarpedString + "\n";
         }
