@@ -18,6 +18,12 @@ public class FizzBuzz {
         return str.substring(0, str.length()-2);
     }
 
+    /**
+     *
+     * @param str  str which need to be breaked by lines
+     * @param charLength  break string with n chars
+     * @return  str break by n chars
+     */
     public String printNCharALine (String str, Integer charLength){
         String line="";
         while (str.length()>=charLength){
