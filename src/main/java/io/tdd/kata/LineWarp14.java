@@ -10,7 +10,7 @@ public class LineWarp14 {
             WarpedString = WarpedString + Line.substring((14 * (i - 1)), (14 * i));
             WarpedString = WarpedString + "\n";
         }
-        WarpedString = WarpedString + "z, 100";
+        WarpedString = WarpedString + "z, Buzz";
         return WarpedString;
     }
 
